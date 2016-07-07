@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/City_Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:text="北京"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PinYin"
+        android:text="BeiJing"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/City_Name"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/City_Temp"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@+id/PinYin"
+        android:textSize="90dp"
+        android:text="33°"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/line1"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/City_Temp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Weather"
+            android:textSize="20dp"
+            android:text="多云" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27°"
+                android:id="@+id/MinTemp"
+                android:layout_marginLeft="10dp"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="～"
+                android:id="@+id/fuhao"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="33°"
+                android:id="@+id/MaxTemp"
+                android:textSize="22dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/picture" />
+
+</RelativeLayout>
